@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb17eab9-701a-47a3-9dbc-9a18bca67f4b" name="Default Changelist" comment="the first page">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+    <list default="true" id="eb17eab9-701a-47a3-9dbc-9a18bca67f4b" name="Default Changelist" comment="del default">
+      <change afterPath="$PROJECT_DIR$/hugo/winter3116/content/archives/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hugo/winter3116/content/search/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo/winter3116/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo/winter3116/config.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2CEKFVXYQymNhjcYK983dTlCZzV" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -64,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658449841165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="del default">
+      <created>1658497790453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658497790453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,10 +90,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the first page" />
-    <option name="LAST_COMMIT_MESSAGE" value="the first page" />
+    <MESSAGE value="del default" />
+    <option name="LAST_COMMIT_MESSAGE" value="del default" />
   </component>
   <component name="WindowStateProjectService">
     <state x="218" y="31" key="CommitChangelistDialog2" timestamp="1658449751695">
@@ -94,13 +106,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="513" y="156" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1658497729030" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1658450013340">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1658497792823">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1658450013340" />
-    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658497662690">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1658497792823" />
+    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658499374797">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1658497662690" />
+    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1658499374797" />
   </component>
 </project>
