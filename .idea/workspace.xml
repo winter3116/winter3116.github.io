@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb17eab9-701a-47a3-9dbc-9a18bca67f4b" name="Default Changelist" comment="del default">
-      <change afterPath="$PROJECT_DIR$/hugo/winter3116/content/archives/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hugo/winter3116/content/search/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hugo/winter3116/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo/winter3116/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo/winter3116/content/search/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/hugo/winter3116/content/search/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658497790453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix config toml">
+      <created>1658502530554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658502530554</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +99,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the first page" />
     <MESSAGE value="del default" />
-    <option name="LAST_COMMIT_MESSAGE" value="del default" />
+    <MESSAGE value="fix config toml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix config toml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="218" y="31" key="CommitChangelistDialog2" timestamp="1658449751695">
