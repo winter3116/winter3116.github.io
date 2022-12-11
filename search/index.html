@@ -18,7 +18,7 @@
     <meta name="description" content="搜索页面">
         
     <meta name="author" content="winter3116">
-    <meta property="og:url" content="https://www.winter3116.github.io/search/">
+    <meta property="og:url" content="https://winter3116.github.io/search/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -45,7 +45,7 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="https://www.winter3116.github.io">
+                    <a id="logo" href="https://winter3116.github.io/">
                         winter3116的博客
                     </a>
                 
@@ -53,13 +53,13 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://www.winter3116.github.io">首页</a>
+                    <a class="" href="https://winter3116.github.io/">Home</a>
                     
-                    <a  href="https://www.winter3116.github.io/tools/" title="工具">工具</a>
+                    <a  href="https://winter3116.github.io/tools/" title="工具">工具</a>
                     
-                    <a  href="https://www.winter3116.github.io/archives/" title="归档">归档</a>
+                    <a  href="https://winter3116.github.io/archives/" title="归档">归档</a>
                     
-                    <a  href="https://www.winter3116.github.io/about/" title="关于">关于</a>
+                    <a  href="https://winter3116.github.io/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -72,26 +72,23 @@
             <div class="col-group">
 
                 <div class="col-8" id="main">
-                    
-<div class="res-cons">
+                    <div class="res-cons">
     <h3 class="archive-title">
-        搜索
-        <span class="keyword">哈哈</span>
-        的结果
+        Search: 
+        <span class="keyword">Keyword</span>
+        results
     </h3>
 
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="链接">标题</a>
+                <a href="链接" target="_blank">标题</a>
             </h1>
         </header>
-        <date class="post-meta meta-date">
-            2019年12月01日
-        </date>
+        
         <div class="post-content">
             概要……
-            <p class="readmore"><a href="链接">阅读全文</a></p>
+            <p class="readmore"><a href="链接" target="_blank">Continue reading</a></p>
         </div>
     </article>
 
@@ -99,7 +96,7 @@
 
 <script type="text/javascript">
 
-    var getUrlParameter = function getUrlParameter(sParam) {
+    var getUrlParameter = function getUrlParameter (sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
             sParameterName,
@@ -119,7 +116,7 @@
         $("span.keyword").text(q);
         $("article.post").remove();
         $.ajax({
-            url: 'https:\/\/www.winter3116.github.io\/index.xml',
+            url: 'https:\/\/winter3116.github.io\/index.xml',
             dataType: "xml",
             success: function (data) {
                 $(data).find("item").each(function () {
@@ -127,10 +124,10 @@
                     var title = item.find("title").text();
                     if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0) {
                         var url = item.find("link").text();
-                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `">` + title + `</a></h1></header>`;
+                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `" target="_blank">` + title + `</a></h1></header>`;
                         var pubDate = new Date(item.find("pubDate").text())
-                        searchItem += `<date class="post-meta meta-date">` + pubDate.getFullYear() + `年` + (pubDate.getMonth() + 1) + `月` + pubDate.getDate() + `日</date>`;
-                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `">阅读全文</a></p></div></article>`;
+                        searchItem += `<time class="post-meta meta-date">` + pubDate.getFullYear() + `-` + (pubDate.getMonth() + 1) + `-` + pubDate.getDate() + `</time>`;
+                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `" target="_blank">"Continue reading"</a></p></div></article>`;
 
                         $("div.res-cons").append(searchItem);
                     }
@@ -142,13 +139,16 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2022 <a href="https://www.winter3116.github.io">winter3116的博客 By winter3116</a>
+        &copy; 2022 <a href="https://winter3116.github.io/">winter3116的博客 By winter3116</a>
         
     </div>
     <br />
     <div>
         <div class="github-badge">
             <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
         </div>
         <div class="github-badge">
             <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
@@ -171,6 +171,8 @@
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
     <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 
 
@@ -182,24 +184,28 @@
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='https://www.winter3116.github.io/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='https://winter3116.github.io/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://www.winter3116.github.io">
+      <input type="hidden" name="sitesearch" value="https://winter3116.github.io/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
-    
+
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        <h3 class="widget-title">Latest articles</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="https://winter3116.github.io/post/my-first-post/" title="My First Post" target="_blank">My First Post</a>
+    </li>
     
 </ul>
     </section>
 
     
 <section class="widget">
-    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <h3 class="widget-title" style="color:red">Ads</h3>
     <ul class="widget-list">
         
         <li>
@@ -215,14 +221,14 @@
 
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
 <ul class="widget-list">
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
 <div class="tagcloud">
     
 </div>
@@ -230,7 +236,7 @@
 
     
 <section class="widget">
-    <h3 class="widget-title">友情链接</h3>
+    <h3 class="widget-title">Links</h3>
     <ul class="widget-list">
         
         <li>
@@ -242,9 +248,9 @@
 
 
     <section class="widget">
-        <h3 class="widget-title">其它</h3>
+        <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://www.winter3116.github.io/index.xml">文章 RSS</a></li>
+            <li><a href="https://winter3116.github.io/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>

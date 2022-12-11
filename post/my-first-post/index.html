@@ -9,16 +9,20 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title> | winter3116的博客</title>
-    <meta property="og:title" content=" - winter3116的博客">
+    <title>My First Post | winter3116的博客</title>
+    <meta property="og:title" content="My First Post - winter3116的博客">
     <meta property="og:type" content="article">
         
+    <meta property="article:published_time" content='2022-07-22T08:20:58&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2022-07-22T08:20:58&#43;08:00'>
         
     <meta name="Keywords" content="golang,go语言,go语言笔记,winter3116,java,博客,python,软件架构">
-    <meta name="description" content="">
+    <meta name="description" content="My First Post">
         
     <meta name="author" content="winter3116">
-    <meta property="og:url" content="https://winter3116.github.io/archives/">
+    <meta property="og:url" content="https://winter3116.github.io/post/my-first-post/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -53,11 +57,11 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://winter3116.github.io/">Home</a>
+                    <a class="current" href="https://winter3116.github.io/">Home</a>
                     
                     <a  href="https://winter3116.github.io/tools/" title="工具">工具</a>
                     
-                    <a class="current" href="https://winter3116.github.io/archives/" title="归档">归档</a>
+                    <a  href="https://winter3116.github.io/archives/" title="归档">归档</a>
                     
                     <a  href="https://winter3116.github.io/about/" title="关于">关于</a>
                     
@@ -174,9 +178,13 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title"></h1>
+            <h1 class="post-title">My First Post</h1>
         </header>
         
+  <time datetime="2022-07-22T00:20:58Z" class="post-meta meta-date dt-published">
+    2022-07-22
+  </time>
+
 
 
         
@@ -188,13 +196,19 @@
         
         
         <div class="post-content">
-            <p>title: &ldquo;归档&rdquo;
-description: Go和Java打杂师
-type: archives</p>
-
+            
         </div>
 
         
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>Author: </strong><a rel="author" href="https://winter3116.github.io/">winter3116</a></li>
+        <li style="word-break:break-all"><strong>Link: </strong><a href="https://winter3116.github.io/post/my-first-post/">https://winter3116.github.io/post/my-first-post/</a></li>
+        <li><strong>License: </strong>This work is under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>. Kindly fulfill the requirements of the aforementioned License when adapting or creating a derivative of this work.</li>
+    </ul>
+</div>
+<br/>
+
 
 
         
@@ -203,7 +217,7 @@ type: archives</p>
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/my-first-post/">My First Post</a></li>
+        <li><a href="/archives/"></a></li>
         
         <li><a href="/search/">搜索</a></li>
         
@@ -290,6 +304,80 @@ type: archives</p>
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 
 
     <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
