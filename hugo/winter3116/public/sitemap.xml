@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://winter3116.github.io/post/my-first-post/</loc>
-    <lastmod>2022-07-22T08:20:58+08:00</lastmod>
+    <loc>https://www.winter3116.github.io/post/</loc>
+    <lastmod>2025-07-17T22:20:58+08:00</lastmod>
   </url><url>
-    <loc>https://winter3116.github.io/post/</loc>
-    <lastmod>2022-07-22T08:20:58+08:00</lastmod>
+    <loc>https://www.winter3116.github.io/</loc>
+    <lastmod>2025-07-17T22:20:58+08:00</lastmod>
   </url><url>
-    <loc>https://winter3116.github.io/</loc>
-    <lastmod>2022-07-22T08:20:58+08:00</lastmod>
+    <loc>https://www.winter3116.github.io/archives/</loc>
   </url><url>
-    <loc>https://winter3116.github.io/archives/</loc>
-    <priority>0</priority>
+    <loc>https://www.winter3116.github.io/categories/</loc>
   </url><url>
-    <loc>https://winter3116.github.io/categories/</loc>
+    <loc>https://www.winter3116.github.io/tags/</loc>
   </url><url>
-    <loc>https://winter3116.github.io/tags/</loc>
-  </url><url>
-    <loc>https://winter3116.github.io/search/</loc>
+    <loc>https://www.winter3116.github.io/search/</loc>
   </url>
 </urlset>
