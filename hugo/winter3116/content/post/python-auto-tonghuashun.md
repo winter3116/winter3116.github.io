@@ -1,9 +1,8 @@
 ---
-title: "win10下pywinauto和pyautogui操作同花顺完成一些固定工作"
-date: 2025-07-17T22:20:58+08:00
+title: "Python Auto Tonghuashun"
+date: 2025-07-18T00:10:21+08:00
 draft: true
 ---
-
 
 ### 代码
 ```python
